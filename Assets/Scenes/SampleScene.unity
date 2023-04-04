@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 850698730}
   - component: {fileID: 850698729}
   - component: {fileID: 850698728}
-  - component: {fileID: 850698727}
+  - component: {fileID: 850698732}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -425,21 +425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &850698727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850698726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0342238d0f9935b4ca5b1761b416a993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  speedInt: 0
-  startPoint: {x: 0, y: 0, z: 0}
 --- !u!65 &850698728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -518,3 +503,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &850698732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850698726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0342238d0f9935b4ca5b1761b416a993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.8
+  startPoint: {x: -7, y: 0, z: 0}
+  endPoint: {x: 7, y: 0, z: 0}
+  currentTime: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.5217148
+      outSlope: 0.5217148
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.85950756
+      value: 0.4484178
+      inSlope: 2.223889
+      outSlope: 2.223889
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3.9260633
+      outSlope: 3.9260633
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  text: 
+  textInText: Text in Text xD
