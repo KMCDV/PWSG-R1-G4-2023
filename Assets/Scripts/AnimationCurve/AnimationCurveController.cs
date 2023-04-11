@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationCurveController : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f; // [] <- Attribute / 1.0f < f do float
+    [SerializeField] private NewBehaviourScript speed;// [] <- Attribute / 1.0f < f do float
     public Vector3 startPoint;
     public Vector3 endPoint;
     public float currentTime;
@@ -23,7 +23,8 @@ public class AnimationCurveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime += Time.deltaTime * speed;
+        currentTime += Time.deltaTime * speed.speed;
         transform.position = Vector3.LerpUnclamped(startPoint, endPoint, curve.Evaluate(currentTime));
     }
+
 }
