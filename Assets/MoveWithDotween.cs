@@ -19,7 +19,6 @@ public class MoveWithDotween : MonoBehaviour
         meshRenderer.material.DOColor(currentColor, .5f).SetLoops(6, LoopType.Yoyo);
     }
 
-
     private void OnMouseDown()
     {
         gameEvent.Raise();

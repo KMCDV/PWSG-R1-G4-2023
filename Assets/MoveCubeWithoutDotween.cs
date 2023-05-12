@@ -19,7 +19,6 @@ public class MoveCubeWithoutDotween : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        
         transform.position = Vector3.LerpUnclamped(originalPosition, originalPosition + Vector3.up * 10, curve.Evaluate(time));
     }
 }
